@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grapherdv"
+    app:startDestination="@id/listrdvFragment">
+    <fragment
+        android:id="@+id/detailrdvFragment"
+        android:name="com.example.detailrdvFragment"
+        android:label="detailrdvFragment" />
+    <fragment
+        android:id="@+id/listrdvFragment"
+        android:name="com.example.listrdvFragment"
+        android:label="listrdvFragment">
+        <action
+            android:id="@+id/action_listrdvFragment_to_detailrdvFragment"
+            app:destination="@id/detailrdvFragment" />
+    </fragment>
+</navigation>
